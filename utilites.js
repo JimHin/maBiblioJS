@@ -5,6 +5,29 @@
 // Dernière Date de modification: 22/02/2019
 //---------------------------------
 
+/*
+* Fonction de récupération des paramètres GET de la page
+* @return Array -- Tableau associatif contenant les paramètres GET
+*/
+	function getParameters()
+	{
+	var urlParams,
+	match,
+	pl = '/+/g', // Regex de remplacement des symboles addition par un espace
+	search = /([^&=]+)=?([^&]*)/g,
+	decode = function (s) { return decodeURIComponent(s.replace(pl, )); },
+	query = window.location.search.substring(1);
+	urlParams = {};
+	while (match = search.exec(query))
+	urlParams[decode(match[1])] = decode(match[2]);
+	console.log(urlParams) //Pour afficher une autre sortie de la fonction et debugger
+	return urlParams;
+	}
+
+
+
+
+
 //	-------------------------------
 // 	CREATION DE DONNEES ALEATOIRES
 // 	-------------------------------
