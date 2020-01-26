@@ -2,7 +2,7 @@
 // Ma Bibliothèque Javascript
 // Crée le 22/02/2019
 // par Jean-Michel Hinicker
-// Dernière Date de modification: 22/02/2019
+// Dernière Date de modification: 26/01/2020
 //---------------------------------
 
 /*
