@@ -9,7 +9,7 @@
 * Fonction de récupération des paramètres GET de la page
 * @return Array -- Tableau associatif contenant les paramètres GET
 */
-	function getParameters()
+	function recuperationGet()
 	{
 	var urlParams,
 	match,
